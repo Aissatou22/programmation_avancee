@@ -1,0 +1,60 @@
+package ProjetJavaEE;
+
+
+public class Lieu {
+
+	private String codeInsee;
+	private String nomCom;
+	private double longitude;
+	private double latitude;
+	
+	
+	//private Set<Monument> monuments ; set pour l'unicité du nom du monument
+	private Departement departements ;
+	private String cheflieude;
+	public Lieu(String codeInsee, String nomCom, double longitude, double latitude, Departement departements,
+			String cheflieude) {
+		super();
+		this.codeInsee = codeInsee;
+		this.nomCom = nomCom;
+		this.longitude = longitude;
+		this.latitude = latitude;
+		this.departements = departements;
+		this.cheflieude = cheflieude;
+	}
+	public String getCodeInsee() {
+		return codeInsee;
+	}
+	public void setCodeInsee(String codeInsee) {
+		this.codeInsee = codeInsee;
+	}
+	public String getNomCom() {
+		return nomCom;
+	}
+	public void setNomCom(String nomCom) {
+		this.nomCom = nomCom;
+	}
+	public double getLongitude() {
+		return longitude;
+	}
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+	public double getLatitude() {
+		return latitude;
+	}
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+	public String getCheflieude() {
+		return cheflieude;
+	}
+	public void setCheflieude(String cheflieude) {
+		this.cheflieude = cheflieude;
+	}
+	
+	
+	
+	
+	
+	}

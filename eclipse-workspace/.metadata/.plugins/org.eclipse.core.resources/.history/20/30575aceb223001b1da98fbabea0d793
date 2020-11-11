@@ -1,0 +1,5 @@
+package ProjetJavaEE;
+
+public @interface Entity {
+
+}

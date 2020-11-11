@@ -1,0 +1,22 @@
+package ProjetJavaEE;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+
+public class Departement implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String dep;
+	private String nomDep;
+	private int numReg;
+	private ArrayList<Lieu> lieux ;
+	
+	//verifier toutes les associations
+	
+	
+
+}
+

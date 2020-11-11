@@ -1,0 +1,80 @@
+package ProjetJavaEE;
+
+import java.io.Serializable;
+import java.util.Set;
+
+
+public class Lieu implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int codeInsee;
+	private String nomCom;
+	private double longitude;
+	private double latitude;
+	private Set<Monument> monuments ; //set pour l'unicité du nom du monument
+	private Departement departements ;
+	private Departement cheflieude;
+	
+	
+	public Lieu(int codeInsee, String nomCom, double longitude, double latitude) {
+		super();
+		this.codeInsee = codeInsee;
+		this.nomCom = nomCom;
+		this.longitude = longitude;
+		this.latitude = latitude;
+	}
+	
+	public int getCodeInsee() {
+		return codeInsee;
+	}
+	public void setCodeInsee(int codeInsee) {
+		this.codeInsee = codeInsee;
+	}
+	public String getNomCom() {
+		return nomCom;
+	}
+	public void setNomCom(String nomCom) {
+		this.nomCom = nomCom;
+	}
+	public double getLongitude() {
+		return longitude;
+	}
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+	public double getLatitude() {
+		return latitude;
+	}
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+
+	public Set<Monument> getMonuments() {
+		return monuments;
+	}
+
+	public void setMonuments(Set<Monument> monuments) {
+		this.monuments = monuments;
+	}
+
+	public Departement getDepartements() {
+		return departements;
+	}
+
+	public void setDepartements(Departement departements) {
+		this.departements = departements;
+	}
+
+	public Departement getCheflieude() {
+		return cheflieude;
+	}
+
+	public void setCheflieude(Departement cheflieude) {
+		this.cheflieude = cheflieude;
+	}
+	
+	
+
+}

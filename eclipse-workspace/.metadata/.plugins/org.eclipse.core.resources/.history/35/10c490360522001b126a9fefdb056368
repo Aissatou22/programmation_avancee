@@ -1,0 +1,62 @@
+package ProjetJavaEE;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+
+public class Departement implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String dep;
+	private String nomDep;
+	private int numReg;
+	private ArrayList<Lieu> lieux ;
+	//verifier toutes les associations
+	
+	public Departement(String dep, String nomDep, int numReg) {
+		super();
+		this.dep = dep;
+		this.nomDep = nomDep;
+		this.numReg = numReg;
+	}
+	
+
+	public String getDep() {
+		return dep;
+	}
+
+	public void setDep(String dep) {
+		this.dep = dep;
+	}
+
+	public String getNomDep() {
+		return nomDep;
+	}
+
+	public void setNomDep(String nomDep) {
+		this.nomDep = nomDep;
+	}
+
+	public int getNumReg() {
+		return numReg;
+	}
+
+	public void setNumReg(int numReg) {
+		this.numReg = numReg;
+	}
+
+
+	public ArrayList<Lieu> getLieux() {
+		return lieux;
+	}
+
+
+	public void setLieux(ArrayList<Lieu> lieux) {
+		this.lieux = lieux;
+	}
+	
+
+}
+

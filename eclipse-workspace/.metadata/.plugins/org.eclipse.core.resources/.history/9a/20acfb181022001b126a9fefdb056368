@@ -1,0 +1,23 @@
+package ProjetJavaEE;
+
+import java.io.Serializable;
+import java.util.Set;
+
+
+
+public class Monument {
+
+	private String codeM;
+	private String nomM;
+	private String propietaire;
+	private String typeMonument;
+	private double longitude;
+	private double latitude;
+	
+	private Set<Celebrite> associeAcelebrites;
+	private Lieu localisation ;
+	
+	
+	
+
+}

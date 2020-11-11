@@ -1,0 +1,18 @@
+package ProjetJavaEE;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+
+public class Departement  {
+
+	private String dep;
+	private String nomDep;
+	private int numReg;
+
+	
+	//verifier toutes les associations
+	
+
+}
+

@@ -1,0 +1,16 @@
+package ProjetJavaEE;
+
+import java.io.Serializable;
+import java.util.Set;
+
+public class Celebrite {
+	
+	private String nom;
+	private String prenom;
+	private String nationalite;
+	private String epoque;
+	//private Set<Monument> monuments;
+	
+	
+
+}

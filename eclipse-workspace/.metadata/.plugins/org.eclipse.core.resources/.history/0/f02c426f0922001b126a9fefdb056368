@@ -1,0 +1,20 @@
+package ProjetJavaEE;
+
+import java.io.Serializable;
+import java.util.Set;
+
+
+public class Lieu {
+
+	private String codeInsee;
+	private String nomCom;
+	private double longitude;
+	private double latitude;
+	
+	
+	//private Set<Monument> monuments ; set pour l'unicité du nom du monument
+	private Departement departements ;
+	//private Departement cheflieude;
+	
+	
+	}

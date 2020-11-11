@@ -1,0 +1,90 @@
+package ProjetJavaEE;
+
+
+import java.io.Serializable;
+import java.util.Set;
+import javax.persistence.*;
+
+
+@Entity
+public class Monument implements Serializable {
+
+	/**
+	 * 
+	 */
+	@Id
+	private static final long serialVersionUID = 1L;
+	private String codeM;
+	private String nomM;
+	private String propietaire;
+	private String typeMonument;
+	private double longitude;
+	private double latitude;
+	private Set<Celebrite> associeAcelebrites;
+	private String localisation ;
+	
+	public Monument(String codeM, String nomM, String propietaire, String typeMonument, double longitude,
+			double latitude, Set<Celebrite> associeAcelebrites, String localisation) {
+		super();
+		this.codeM = codeM;
+		this.nomM = nomM;
+		this.propietaire = propietaire;
+		this.typeMonument = typeMonument;
+		this.longitude = longitude;
+		this.latitude = latitude;
+		this.associeAcelebrites = associeAcelebrites;
+		this.localisation = localisation;
+	}
+	public String getCodeM() {
+		return codeM;
+	}
+	public void setCodeM(String codeM) {
+		this.codeM = codeM;
+	}
+	public String getNomM() {
+		return nomM;
+	}
+	public void setNomM(String nomM) {
+		this.nomM = nomM;
+	}
+	public String getPropietaire() {
+		return propietaire;
+	}
+	public void setPropietaire(String propietaire) {
+		this.propietaire = propietaire;
+	}
+	public String getTypeMonument() {
+		return typeMonument;
+	}
+	public void setTypeMonument(String typeMonument) {
+		this.typeMonument = typeMonument;
+	}
+	public double getLongitude() {
+		return longitude;
+	}
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+	public double getLatitude() {
+		return latitude;
+	}
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
+	}
+	public Set<Celebrite> getAssocieAcelebrites() {
+		return associeAcelebrites;
+	}
+	public void setAssocieAcelebrites(Set<Celebrite> associeAcelebrites) {
+		this.associeAcelebrites = associeAcelebrites;
+	}
+	public String getLocalisation() {
+		return localisation;
+	}
+	public void setLocalisation(String localisation) {
+		this.localisation = localisation;
+	}
+	
+	
+	
+
+}
